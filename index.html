@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-05</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- This is the navbar -->
+    <nav style="background-color: #FFFBF0;">
+        <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <p id="brand-logo">Hungry Moster</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active menu" aria-current="page" href="#">Home</a>
+                            <a class="nav-link menu" href="#products">Product</a>
+                            <a class="nav-link menu" href="#about-us">About us</a>
+                            <a class="nav-link menu" href="#contact-us" tabindex="-1" aria-disabled="true">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+    </nav>
+
+    <body>
+        <div class="container">
+            <form class="col-md-6 m-auto py-5">
+                <div class="input-group mb-3">
+                    <input id="food-name" type="text" class="form-control" placeholder="Search for meal ...">
+                    <div class="input-group-append">
+                        <button onclick="searchForFood()" type="button" class="btn btn-danger">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container" id="food-infoSection">
+
+        </div>
+        <div class="container" id="food-section">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="api.js"></script>
+    </body>
+
+</html>

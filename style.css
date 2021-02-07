@@ -1,0 +1,42 @@
+#brand-logo {
+    width: 290px;
+    height: 30px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.815);
+    font-weight: bolder;
+}
+
+.menu {
+    margin-right: 10px;
+    color: #3C3C3C;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#food-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.img-name {
+    width: 300px;
+    background-color: lightsteelblue;
+}
+
+.img-name img {
+    width: 100%;
+}
+
+.info-food {
+    width: 420px;
+    background-color: lightsteelblue;
+    padding: 10px;
+    margin-left: 350px;
+    margin-bottom: 50px;
+}
+
+.info-food img {
+    width: 400px;
+}
