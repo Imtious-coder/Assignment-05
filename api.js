@@ -7,7 +7,7 @@ const searchForFood = () => {
     fetch(url)
         .then(response => response.json())
         .then(data => showFood(data))
-        .catch(error => document.getElementById('food-section').innerHTML = `<h4> No food is related to this word... please try something else :( </h4>`);
+        .catch(error => document.getElementById('food-section').innerHTML = `<h4> No food is related to this word... please try something else bro</h4>`);
     document.getElementById('food-name').value = '';
 }
 
@@ -28,4 +28,26 @@ const showFood = foodsName => {
         `;
         foodSection.appendChild(imgAndNameInfo);
     });
+};
+
+// Food info here...
+const foodInfo = (img, name, Ingredient1, Ingredient2, Ingredient3, Ingredient4, Ingredient5, Ingredient6) => {
+    document.getElementById('food-infoSection').innerHTML = "";
+    const info = document.getElementById('food-infoSection');
+    const infoDetail = document.createElement('div');
+    infoDetail.className = 'info-food';
+    infoDetail.innerHTML = `
+    <img src=${img}>
+    <h3>${name}</h3>
+    <h4>Ingredients</h4>
+    <ul>
+        <li>${Ingredient1}</li>
+        <li>${Ingredient2}</li>
+        <li>${Ingredient3}</li>
+        <li>${Ingredient4}</li>
+        <li>${Ingredient5}</li>
+        <li>${Ingredient6}</li>
+    </ul>
+    `;
+    info.appendChild(infoDetail);
 };
