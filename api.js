@@ -7,7 +7,7 @@ const searchForFood = () => {
     fetch(url)
         .then(response => response.json())
         .then(data => showFood(data))
-        .catch(error => document.getElementById('food-section').innerHTML = `<h4> No food is related to this word... please try something else bro</h4>`);
+        .catch(error => document.getElementById('food-section').innerHTML = `<h4> No food is related to this word... please try something else bro...</h4>`);
     document.getElementById('food-name').value = '';
 }
 
