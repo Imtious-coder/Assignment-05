@@ -15,7 +15,6 @@ const searchForFood = () => {
 const showFood = foodsName => {
     const foodSection = document.getElementById('food-section');
     foodsName.meals.forEach(foodName => {
-
         const imgFood = foodName.strMealThumb;
         const nameFood = foodName.strMeal;
         const imgAndNameInfo = document.createElement('div');
